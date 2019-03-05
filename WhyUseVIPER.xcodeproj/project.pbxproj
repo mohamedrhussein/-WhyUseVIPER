@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D84C648222E97E600DC75EF /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D84C647222E97E600DC75EF /* ProfileViewController.swift */; };
+		4D84C64A222E980E00DC75EF /* ProfileInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D84C649222E980E00DC75EF /* ProfileInteractor.swift */; };
+		4D84C64C222E982200DC75EF /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D84C64B222E982200DC75EF /* ProfilePresenter.swift */; };
+		4D84C64E222E983200DC75EF /* ProfileEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D84C64D222E983200DC75EF /* ProfileEntity.swift */; };
+		4D84C650222E984700DC75EF /* ProfileRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D84C64F222E984700DC75EF /* ProfileRouting.swift */; };
 		4DB4D96C221EBF8F0019F972 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB4D96B221EBF8F0019F972 /* AppDelegate.swift */; };
-		4DB4D96E221EBF8F0019F972 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB4D96D221EBF8F0019F972 /* ViewController.swift */; };
 		4DB4D971221EBF8F0019F972 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DB4D96F221EBF8F0019F972 /* Main.storyboard */; };
 		4DB4D974221EBF8F0019F972 /* WhyUseVIPER.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4DB4D972221EBF8F0019F972 /* WhyUseVIPER.xcdatamodeld */; };
 		4DB4D976221EBF900019F972 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DB4D975221EBF900019F972 /* Assets.xcassets */; };
@@ -35,9 +39,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4D84C647222E97E600DC75EF /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		4D84C649222E980E00DC75EF /* ProfileInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInteractor.swift; sourceTree = "<group>"; };
+		4D84C64B222E982200DC75EF /* ProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
+		4D84C64D222E983200DC75EF /* ProfileEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEntity.swift; sourceTree = "<group>"; };
+		4D84C64F222E984700DC75EF /* ProfileRouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRouting.swift; sourceTree = "<group>"; };
 		4DB4D968221EBF8F0019F972 /* WhyUseVIPER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhyUseVIPER.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DB4D96B221EBF8F0019F972 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4DB4D96D221EBF8F0019F972 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4DB4D970221EBF8F0019F972 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4DB4D973221EBF8F0019F972 /* WhyUseVIPER.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WhyUseVIPER.xcdatamodel; sourceTree = "<group>"; };
 		4DB4D975221EBF900019F972 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -76,6 +84,59 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D524E59221EF9A900C6A735 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				4DB4D96B221EBF8F0019F972 /* AppDelegate.swift */,
+				4DB4D977221EBF900019F972 /* LaunchScreen.storyboard */,
+				4DB4D96F221EBF8F0019F972 /* Main.storyboard */,
+				4DB4D97A221EBF900019F972 /* Info.plist */,
+				4DB4D975221EBF900019F972 /* Assets.xcassets */,
+				4DB4D972221EBF8F0019F972 /* WhyUseVIPER.xcdatamodeld */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		4D84C642222E96DB00DC75EF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4D84C647222E97E600DC75EF /* ProfileViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4D84C643222E96E300DC75EF /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				4D84C649222E980E00DC75EF /* ProfileInteractor.swift */,
+			);
+			path = Interactors;
+			sourceTree = "<group>";
+		};
+		4D84C644222E96F100DC75EF /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				4D84C64B222E982200DC75EF /* ProfilePresenter.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		4D84C645222E96FC00DC75EF /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				4D84C64D222E983200DC75EF /* ProfileEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		4D84C646222E972300DC75EF /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				4D84C64F222E984700DC75EF /* ProfileRouting.swift */,
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
 		4DB4D95F221EBF8F0019F972 = {
 			isa = PBXGroup;
 			children = (
@@ -99,13 +160,12 @@
 		4DB4D96A221EBF8F0019F972 /* WhyUseVIPER */ = {
 			isa = PBXGroup;
 			children = (
-				4DB4D96B221EBF8F0019F972 /* AppDelegate.swift */,
-				4DB4D96D221EBF8F0019F972 /* ViewController.swift */,
-				4DB4D96F221EBF8F0019F972 /* Main.storyboard */,
-				4DB4D975221EBF900019F972 /* Assets.xcassets */,
-				4DB4D977221EBF900019F972 /* LaunchScreen.storyboard */,
-				4DB4D97A221EBF900019F972 /* Info.plist */,
-				4DB4D972221EBF8F0019F972 /* WhyUseVIPER.xcdatamodeld */,
+				4D524E59221EF9A900C6A735 /* SupportFiles */,
+				4D84C642222E96DB00DC75EF /* Views */,
+				4D84C643222E96E300DC75EF /* Interactors */,
+				4D84C644222E96F100DC75EF /* Presenters */,
+				4D84C645222E96FC00DC75EF /* Entity */,
+				4D84C646222E972300DC75EF /* Routing */,
 			);
 			path = WhyUseVIPER;
 			sourceTree = "<group>";
@@ -259,9 +319,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D84C648222E97E600DC75EF /* ProfileViewController.swift in Sources */,
 				4DB4D974221EBF8F0019F972 /* WhyUseVIPER.xcdatamodeld in Sources */,
-				4DB4D96E221EBF8F0019F972 /* ViewController.swift in Sources */,
+				4D84C64A222E980E00DC75EF /* ProfileInteractor.swift in Sources */,
 				4DB4D96C221EBF8F0019F972 /* AppDelegate.swift in Sources */,
+				4D84C64E222E983200DC75EF /* ProfileEntity.swift in Sources */,
+				4D84C64C222E982200DC75EF /* ProfilePresenter.swift in Sources */,
+				4D84C650222E984700DC75EF /* ProfileRouting.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,7 +502,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U6Z2MCMJT7;
-				INFOPLIST_FILE = WhyUseVIPER/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/WhyUseVIPER/SupportFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -456,7 +520,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U6Z2MCMJT7;
-				INFOPLIST_FILE = WhyUseVIPER/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/WhyUseVIPER/SupportFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
